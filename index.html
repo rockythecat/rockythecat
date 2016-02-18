@@ -18,6 +18,21 @@
     <!-- bootstrap.min.css from bootswatch.com, readable, 18-02-2016 -->
     <link rel="stylesheet" href="bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Facebook -->
+    <!-- You can use open graph tags to customize link previews.
+         Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url"
+          content="http://rockythecat.github.io/rockythecat/" />
+    <meta property="og:type"
+          content="website" />
+    <meta property="og:title"
+          content="RockyTheCat's website" />
+    <meta property="og:description"
+          content="RockyTheCat's website helps him get home when lost.  His HomeAgain chip id# is 985 112 002 159 008 (985112002159008)." />
+    <meta property="og:image"
+          content="http://rockythecat.github.io/rockythecat/Rocky-small.jpg" />
+        
   </head>
   <body>
     <div class="container">
@@ -82,5 +97,30 @@
     <script src="jquery-1.11.3.min.js"></script>
     <!-- bootstrap 3.3.6 -->
     <script src="bootstrap.min.js"></script>
+
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your like button code -->
+    <div class="fb-like"
+         data-href="http://rockythecat.github.io/rockythecat/"
+         data-layout="button"
+         data-action="like"
+         data-show-faces="true">
+    </div>
+
+    <!-- Your share button code -->
+    <div class="fb-share-button"
+         data-href="http://rockythecat.github.io/rockythecat/"
+         data-layout="button">
+    </div>
   </body>
 </html>
